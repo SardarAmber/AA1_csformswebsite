@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signup – Wild&Green</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Wild&Green</h1>
+</header>
+
+<main>
+  <h2>Join Us on the project WILD&GREEN!</h2>
+
+  <form onsubmit="return validateForm()">
+
+    <!-- PERSONAL INFO -->
+    <h3>Personal Information</h3>
+
+    <label>Full Name:</label><br>
+    <input type="text" id="fullname">
+    <span id="nameError"></span><br><br>
+
+    <label>Birthdate:</label><br>
+    <input type="date" id="birthdate">
+    <span id="birthError"></span><br><br>
+
+    <label>Sex:</label><br>
+    <input type="radio" name="sex"> Male
+    <input type="radio" name="sex"> Female
+    <span id="sexError"></span><br><br>
+
+
+
+
+    <!-- ACCOUNT -->
+    <h3>Account Details</h3>
+
+    <label>Email:</label><br>
+    <input type="text" id="email">
+    <span id="emailError"></span><br><br>
+
+    <label>Username:</label><br>
+    <input type="text" id="username">
+    <span id="userError"></span><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password">
+    <span id="passError"></span><br><br>
+
+    <label>Confirm Password:</label><br>
+    <input type="password" id="confirm">
+    <span id="confirmError"></span><br><br>
+
+
+    <!-- TOPIC -->
+    <h3>About Nature </h3>
+
+    <label>Favorite ecosystem:</label><br>
+    <select id="ecosystem">
+      <option value="">-- choose --</option>
+      <option>Forest</option>
+      <option>Ocean</option>
+      <option>Grassland</option>
+    </select>
+    <span id="ecoError"></span><br><br>
+
+    <label>What will you do?</label><br>
+    <input type="checkbox" name="actions"> Plant trees
+    <input type="checkbox" name="actions"> Protect animals
+    <input type="checkbox" name="actions"> Reduce waste
+    <span id="actionError"></span><br><br>
+
+    <label>How often do you help?</label><br>
+    <input type="radio" name="effort"> Always
+    <input type="radio" name="effort"> Sometimes
+    <input type="radio" name="effort"> Rarely
+    <span id="effortError"></span><br><br>
+
+
+    <button type="submit" class="btn">Join and Help 🌿</button>
+
+    <p id="successMessage"></p>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
